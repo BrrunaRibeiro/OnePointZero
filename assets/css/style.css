@@ -8,5 +8,23 @@ body {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image.webp);
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
+#hero-outer {
+    height: 600px;
+    width: 100%;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+}
